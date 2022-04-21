@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.res1{
+  height: min-content;
+  width: 45vw;
+}
+
+.res2{
+  height: min-content;
+  width: 40vw;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
