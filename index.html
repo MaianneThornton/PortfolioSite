@@ -12,47 +12,51 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <!-- Font Awesome Link -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link rel="stylesheet" href="Styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="main.css">
   <title>Maianne Thornton | Web Developer</title>
 </head>
 
 <body>
 
   <!-- NAVBAR SECTION NAVBAR SECTION -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light m-0 p-0">
-    <div class="container-fluid  p-0">
-      <a class="navbar-brand me-0" href="https://maiannethornton.com"> MT Web Design
-      </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse me-0 " id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#intro">Introduction</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#skills">Technical Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#certifications"> Certifications</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#resume">Resume</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            My Work</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#projects">Projects</a></li>
-            <li><a class="dropdown-item" href="#arcade">Arcade</a></li>
-          </ul>
-        </li>
-      </ul>
+  <nav>
+    <div class="nav-center">
+        <div class="nav-header">
+            <img src="./Images/MT_Icon.png" alt="icon" class="icon" />
+            <!-- {/* toggles link visibility, initially set to false (hidden) */} -->
+            <!-- <button class="nav-toggle" onClick={() => setShowLinks(!showLinks)}> -->
+              <button class="nav-toggle" onclick="navToggle()" id="navBtn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- {/* If showLinks is true, return links-container and showContainer class else show links-container */} -->
+        <div class="links-container">
+            <ul class="links">
+                <li>
+                        <a href="#">Home</a>
+                    </li>
+                <li>
+                        <a href="#intro">Introduction</a>
+                    </li>
+                <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                <li>
+                        <a href="#arcade">Arcade</a>
+                    </li>
+                <li>
+                        <a href="#certifications">Certifications</a>
+                    </li>
+                <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
   <!-- Scroll to Top Button Scroll to Top Button Scroll to Top Button -->
@@ -66,7 +70,7 @@
       <img src="Images/maianneThorntonWeb.png" alt="Photo of Maianne Thornton" class="img-bio">
       <aside class="col-9 gx-5">
         <h4>
-          Hi there 👋🏾 I'm Maianne Thornton (she/her)
+          <em>Hi there 👋🏾 I'm Maianne Thornton (she/her)</em>
       </h4>
       <p>
           I'm a graduate of the 16-week Commonwealth Coders Web Development Program based in Kentucky. I am skilled in HTML, CSS, Bootstrap, JavaScript, Chrome Dev Tools, React, Git, Terminal, NodeJS, Axios, Express and MongoDB. As a lifelong student who is also very self motivated, I am committed to continuing my education.
