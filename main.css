@@ -158,6 +158,18 @@ nav a {
   margin: 0 3rem 1.5rem;
   box-shadow: var(--dark-shadow);
   border-radius: 1rem;
+  /* slides sections off screen */
+  transform: translateX(400%);
+  transition: transform 0.9s ease;
+}
+
+/* moves all the even containers to the left side */
+.container:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+.container.show {
+  /* returns sections to original places */
+  transform: translateX(0);
 }
 .filter-btn {
   background: transparent;
