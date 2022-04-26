@@ -42,6 +42,7 @@ Body {
   color: var(--clr-purple-dark);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow-x: hidden;
 }
 ul {
   list-style-type: none;
