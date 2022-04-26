@@ -1,7 +1,6 @@
 //Get the return button:
 mybutton = document.getElementById("myBtn");
-// Get the nav button:
-navbtn = document.getElementById("nav-btn");
+
 
 // When the user scrolls down 20px from the top of the document, show the return button
 window.onscroll = function () { scrollFunction() };
@@ -20,9 +19,34 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// Get the nav button:
+navbtn = document.getElementById("nav-btn");
+
 function navToggle() {
   navbtn.addEventListener('click', () => {
     nav.classList.toggle('showLinks')
     input.focus()
+  })
+}
+
+// select all the container classes
+const boxes = document.querySelectorAll('.container')
+
+window.addEventListener('scroll', checkBoxes)
+
+checkBoxes()
+
+function checkBoxes() {
+  // trigger point to determine when the box should scroll into view by using the innerHeight of the box
+  const triggerBottom = window.innerHeight / 5 * 4
+
+  boxes.forEach(box => {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+    const boxTop = box.getBoundingClientRect().top
+    if (boxTop < triggerBottom) {
+      box.classList.add('show')
+    } else {
+      box.classList.remove('show')
+    }
   })
 }
