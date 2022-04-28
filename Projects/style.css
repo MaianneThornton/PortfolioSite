@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --clr-purple-dark: hsl(226, 28%, 40%);
+  --clr-purple-light: hsl(302, 24%, 80%);
+  --clr-white: #fff;
+  --clr-black: #222;
+  --clr-grey-1: hsl(210, 36%, 96%);
+  --clr-grey-2: hsl(209, 34%, 30%);
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Glory', sans-serif;
+  background: var(--clr-grey-1);
+  color: var(--clr-purple-dark);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+/*
+=============== 
+Section
+===============
+*/
+.main {
+  margin-top: 1rem;
+  background-color: var(--clr-purple-light);
+}
+
+.container {
+  border-radius: 1rem;
+  box-shadow: var(--dark-shadow);
+}
+.btn-primary {
+  background-color: var(--clr-purple-dark);
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: var(--clr-white);
+  color: var(--clr-purple-dark);
+  border: none;
+}
+
+.btn-primary:focus {
+  background-color: var(--clr-white);
+  color: var(--clr-purple-dark);
+}
+
+/*
+=============== 
+Cards
+===============
+*/
+
+.card {
+  border-radius: 1rem;
+}
+.cards {
+  padding-bottom: 1rem;
+}
+.card img {
+  border-radius: var(--radius);
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/*
+=============== 
+Media Queries
+===============
+*/
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
