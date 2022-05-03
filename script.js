@@ -1,3 +1,4 @@
+// Scroll to top arrow button
 //Get the return button:
 mybutton = document.getElementById("myBtn");
 
@@ -13,6 +14,7 @@ function scrollFunction() {
   }
 }
 
+// Navigation button
 // When the user clicks on the return button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
@@ -29,6 +31,7 @@ function navToggle() {
   })
 }
 
+// Slides sections in from alternating sides
 // select all the container classes
 const boxes = document.querySelectorAll('.container')
 
