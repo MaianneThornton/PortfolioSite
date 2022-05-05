@@ -97,3 +97,8 @@ form button {
   align-items: center;
   justify-content: center;
 }
+
+.back {
+  color: #fff;
+  font-weight: 700;
+}
