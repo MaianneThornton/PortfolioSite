@@ -393,53 +393,48 @@ Media Queries
 */
 
 /* Global */
-@media screen and (min-width: 50rem) {
-  /*  */
+@media screen and (min-width: 800px) {
   h1,
   h2,
   h3,
   h4 {
     line-height: 1;
   }
+  
+  /* Navbar */
+    .nav-center {
+      max-width: 73.125rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links-container {
+      height: auto !important;
+    }
+    .links {
+      display: flex;
+    }
+    .links a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      padding: 0;
+      background: transparent;
+    }
 }
-@media screen and (min-width: 62rem) {
-  .section {
-    width: 95vw;
-  }
-}
-/* Navbar */
-@media screen and (min-width: 50rem) {
-  .nav-center {
-    max-width: 73.125rem;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-  .nav-header {
-    padding: 0;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .links-container {
-    height: auto !important;
-  }
-  .links {
-    display: flex;
-  }
-  .links a {
-    padding: 0;
-    margin: 0 0.5rem;
-  }
-  .links a:hover {
-    padding: 0;
-    background: transparent;
-  }
-}
+
 /* Main */
-@media (max-width: 62rem) {
+@media (max-width: 992px) {
+  
   .row {
     display: flex;
     flex-direction: column;
@@ -447,17 +442,11 @@ Media Queries
     justify-content: center;
     align-items: center;
   }
-  .shot {
+  .img-bio {
+    height: 20vh;
+    width: 40vw;
     padding-bottom: 1rem;
   }
-  .bio {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: wrap;
-    margin: 0 3.5rem 0 1.5rem;
-  }
-  /* Certificates */
   .card-cert{
     display: flex;
     flex-direction: column;
