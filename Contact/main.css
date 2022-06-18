@@ -91,6 +91,11 @@ form button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/* .photo {
+  width: 25%;
+  height: 50%;
+} */
+
 .thanks {
   background: var(--clr-purple-light);
   color: var(--clr-purple-dark);
@@ -106,4 +111,8 @@ form button:hover {
 .back {
   color: #fff;
   font-weight: 700;
+}
+
+.back a {
+  font-size: 1.25rem;
 }
