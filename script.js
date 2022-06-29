@@ -1,4 +1,8 @@
-// Scroll to top arrow button
+/*
+=============== 
+Scroll to top Arrow
+===============
+*/
 //Get the return button:
 mybutton = document.getElementById("myBtn");
 
@@ -14,15 +18,24 @@ function scrollFunction() {
   }
 }
 
-// Navigation button
 // When the user clicks on the return button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+/*
+=============== 
+Navbar
+===============
+*/
 // Get the nav button:
 navbtn = document.getElementById("nav-btn");
+links = document.getElementById("links")
+
+function showLinks(){
+  
+}
 
 function navToggle() {
   navbtn.addEventListener('click', () => {
@@ -31,6 +44,12 @@ function navToggle() {
   })
 }
 
+
+/*
+=============== 
+Section Animation
+===============
+*/
 // Slides sections in from alternating sides
 // select all the container classes
 const boxes = document.querySelectorAll('.container')
