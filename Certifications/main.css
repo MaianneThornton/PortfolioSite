@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+:root {
+  --clr-purple-dark: hsl(226, 28%, 40%);
+  --clr-purple-light: hsl(302, 24%, 80%);
+  --clr-white: #fff;
+  --clr-black: #222;
+  --clr-grey-1: hsl(210, 36%, 96%);
+  --clr-grey-2: hsl(209, 34%, 30%);
+  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
+  --max-width: 73.125rem;
+  --fixed-width: 38.75rem;
+}
+
+Body {
+  font-family: 'Glory', sans-serif;
+  background: var(--clr-grey-1);
+  color: var(--clr-purple-dark);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: white;
+  border: 0.0625rem solid #454545;
+  padding-top: 1rem;
+  margin: 0 3rem 1.5rem;
+  width: 90vw;
+  box-shadow: var(--dark-shadow);
+  border-radius: 1rem;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.certificates {
+  background-color: var(--clr-purple-light);
+}
+.card-cert {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  box-shadow: var(--dark-shadow);
+  margin: 1.5rem 0;
+}
+.card-cert img {
+  width: 20vw;
+  height: 25vh;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding: 0 1rem;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+.card-body small {
+  margin-top: 0.5rem;
+}
+.card-title {
+  font-weight: 700;
+}
+.card-text {
+  margin-bottom: 0.5rem;
+}
+.card-text ~ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  font-size: 1.1rem;
+}
