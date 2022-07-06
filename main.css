@@ -147,7 +147,7 @@ Main
 ===============
 */
 .container {
-  background-color: white;
+  background-color: var(--clr-white);
   border: 0.0625rem solid #454545;
   padding-top: 1rem;
   margin: 0 3rem 1.5rem;
@@ -246,6 +246,22 @@ Technical Skills
 #Skills {
   width: 90vw;
 }
+
+.skills {
+  background-color: #2A383F;
+}
+
+.skills h1 {
+  color: #fcf9da;
+}
+
+.card {
+  background-color: #C097D2;
+color: #fcf9da;
+border-radius: 1rem;
+padding-top: 1rem;
+}
+
 .btn-container {
   margin-bottom: 1rem;
   display: flex;
@@ -265,59 +281,14 @@ Technical Skills
   justify-content: center;
 }
 .skills-item {
-  border: 0.0625rem solid var(--clr-purple-dark);
+  border: 0.0625rem solid var(--clr-purple-light);
+  
 }
 .grid {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
-
-/*
-=============== 
-Certificates
-===============
-*/
-.certificates {
-  background-color: var(--clr-purple-light);
-}
-.card-cert {
-display: flex;
-flex-direction: row;
-align-items: center;
-background-color: var(--clr-white);
-border-radius: 1rem;
-box-shadow: var(--dark-shadow);
-margin: 1.5rem 0;
-}
-.card-cert img{
-width: 20vw;
-height: 25vh;
-margin-top: .5rem;
-margin-bottom: .5rem;
-position: relative;
-padding: 0 1rem;
-}
-.card-body{
-display: flex;
-flex-direction: column;
-align-items: baseline;
-justify-content: center;
-}
-.card-body small{
-  margin-top: .5rem;
-}
-.card-title{
-  font-weight: 700;
-}
-.card-text{
-  margin-bottom: .5rem;
-}
-.card-text ~ ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 /*
 =============== 
@@ -437,3 +408,28 @@ Media Queries
     height: 35vh;
   }
 } */
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .intro .row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .intro .row img {
+    width: max-content;
+    height: max-content;
+    margin-bottom: .5rem;
+  }
+}
