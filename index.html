@@ -20,60 +20,67 @@
 <body>
 
   <!-- NAVBAR SECTION NAVBAR SECTION -->
-  <nav class="navbar">
-    <div class="nav-center">
-        <div class="nav-header">
-            <img src="./Images/MT_Icon.png" alt="icon" class="icon" />
-            
-              <button class="nav-toggle" onclick="navToggle()" id="navBtn">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-        <div class="links-container">
-            <ul class="links">
-                <li>
-                        <a href="#">Home</a>
-                    </li>
-                <li>
-                        <a href="#intro">Introduction</a>
-                    </li>
-                <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                <li>
-                        <a href="Projects/index.html">Projects</a>
-                    </li>
-                <li>
-                  <a href="Arcade/index.html">Arcade</a>
-                    </li>
-                <li>
-                        <a href="#certifications">Certifications</a>
-                    </li>
-                <li>
-                        <a href="Contact/index.html">Contact</a>
-                    </li>
-            </ul>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light m-0 p-10">
+  <div class="container-fluid  p-0">
+    <img src="./Images/MT_Icon.png" alt="icon" class="icon" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse me-0 " id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#intro">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#skills"> Skills</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="Contact/index.html">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="Arcade/index.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          My Work</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="Projects/index.html">Projects</a></li>
+          <li><a class="dropdown-item" href="Arcade/index.html">Arcade</a></li>
+          <li><a class="dropdown-item" href="Certifications/index.html">Certifications</a></li>
+        </ul> 
+      </li>
+    </ul>
+  </div>
+</div>
 </nav>
 
   <!-- Scroll to Top Button Scroll to Top Button Scroll to Top Button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
+  <div class="banner">
+    <img src="Images/HiImMaianne.png" alt="Welcome Banner">
+  </div>
   <!-- INTRODUCTION Section INTRODUCTION Section INTRODUCTION Section-->
   <div class="container p-4 intro">
     <h1 id="intro">Introduction</h1>
     <section class="row">
       <img src="Images/maianneThorntonWeb.png" alt="Photo of Maianne Thornton" class="img-bio">
       <aside class="col-9 gx-5">
-        <h4>
+        <h3>
           <em>Hi there 👋🏾 I'm Maianne Thornton (she/her)</em>
-      </h4>
+      </h3>
+      <h5>
+        Pronunciation: MY-an THORN-tuhn | Pronouns: (she/her)
+      </h5>
+
+      <p>
+        I am passionate about creating technological experiences across all avenues of engagement with the goal of promoting equity through the user experience.
+      </p>
       <p>
           I am skilled in HTML, CSS, Bootstrap, JavaScript, Chrome Dev Tools, React, Git, Terminal, NodeJS, Axios, Express and MongoDB. I am passionate about creating technology experiences across all avenues of engagement with the goal of promoting equity through the user experience.
       </p>
 
-      <p>
+      <!-- <p>
           👩🏾‍🎓 I completed the following courses/programs:
       </p>
       <ul>
@@ -83,17 +90,17 @@
           <li>
               <a href="https://www.classcentral.com/course/freecodecamp-javascript-algorithms-and-data-struc-34060">Class Central's</a> 6-week freeCodeCamp's JavaScript Algorithms and Data Structures Certification Cohort | Feb. 2022
           </li>
-      </ul>
+      </ul> -->
 
       <p>
-          📚 I'm currently working on:
+          I'm currently working on:
       </p>
       <ul>
           <li>
-            Olof Paulson's Python101 Course on Scrimba
+            Brad Traversy's 50 Projects in 50 Days
           </li>
           <li>
-            Brad Traversy's 50 Projects in 50 Days
+            FreeCodeCamp's Front End Development Libraries Course
           </li>
       </ul>
 
@@ -199,7 +206,7 @@
   </section>
 
   <!-- CERTIFICATES Section CERTIFICATES Section CERTIFICATES Section -->
-  <div class="container p-4 certificates">
+  <!-- <div class="container p-4 certificates">
     <h1 id="certifications">Certifications/Awards</h1>
       <div class="card-cert">
         <img src="images/ReactBadge.png" alt="React JS Badge">
@@ -312,7 +319,7 @@
           <small class="text-muted">Awarded by freeCodeCamp Aug 2021.</small>
         </div>
       </div>
-</div>
+</div> -->
 
 
 
