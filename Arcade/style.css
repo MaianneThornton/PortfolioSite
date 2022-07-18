@@ -67,7 +67,7 @@ canvas {
 
   .text h2 {
     font-size: 0.75rem;
-    width: 1vw;
+    /* width: 1vw; */
   }
   .container {
     display: flex;
