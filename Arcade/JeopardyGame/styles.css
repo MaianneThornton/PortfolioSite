@@ -55,3 +55,16 @@ body {
 .wrong-answer {
   background-color: rgb(221, 64, 56);
 }
+
+@media (max-width: 580px) {
+  body h1 {
+    width: 75vw;
+    text-align: center;
+  }
+  #game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
