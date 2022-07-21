@@ -439,4 +439,20 @@ Media Queries
     height: max-content;
     margin-bottom: .5rem;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects table h3 {
+    font-size: 1.25rem;
+  }
+
+  .projects table img {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
