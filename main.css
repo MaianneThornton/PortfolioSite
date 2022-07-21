@@ -455,4 +455,9 @@ Media Queries
     padding-left: 5px;
     padding-right: 5px;
   }
+
+  .projects table td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
