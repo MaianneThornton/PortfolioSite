@@ -289,6 +289,14 @@ padding-top: 1rem;
   align-items: center;
   justify-content: space-around;
 }
+
+.projects {
+  background-color: var(--clr-purple-light);
+}
+.projects img {
+  border-radius: .75rem;
+}
+
 /*
 =============== 
 Footer
