@@ -47,6 +47,73 @@ h1 {
   font-size: 3.125rem;
   font-weight: 700;
 }
+ul {
+  list-style-type: none;
+}
+a {
+  color: var(--clr-purple-dark);
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+}
+a:hover {
+  color: var(--clr-white);
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+
+/*
+=============== 
+Navbar
+===============
+*/
+
+
+.navbar {
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  position: sticky;
+  top: 0;
+  margin-bottom: 1.5rem;
+  z-index: 99;
+  font-size: 1.10rem;
+}
+
+.icon {
+  width: 3.5rem;
+  border-radius: 2rem;
+  margin-right: 1.5rem;
+}
+
+/*
+=============== 
+Scroll to Top Btn
+===============
+*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #485681;
+  color: thistle;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#myBtn:hover {
+  background-color: white;
+  color: #485681;
+  border: 1px solid #454545;
+}
+
 
 /*
 =============== 
@@ -100,6 +167,52 @@ Cards
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100px;
+  background-color: thistle;
+  margin-bottom: 0;
+  border-top: 5px solid #485681;
+}
+
+#footer p {
+  font-size: 15px;
+}
+
+#footer #logo {
+  width: 100px;
+}
+
+#footer .fa {
+  font-size: 25px;
+}
+
+#footer li {
+  list-style: none;
+}
+
+#footer a {
+  color: #485681;
+}
+
+#footer a:hover {
+  color: white;
+  border-color: white;
 }
 
 /*

@@ -13,14 +13,47 @@
 
     
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap Link -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <!-- Font Awesome Link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- NAVBAR SECTION NAVBAR SECTION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light m-0 p-10">
+  <div class="container-fluid  p-0">
+    <img src="../Images/MT_Icon.png" alt="icon" class="icon" />
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse me-0 " id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html#intro">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html#gallery"> Skills</a>
+        </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          My Work</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item nav-link" href="../Projects/index.html">Projects</a></li>
+          <li><a class="dropdown-item nav-link" href="../Arcade/index.html">Arcade</a></li>
+          <li><a class="dropdown-item nav-link" href="../Certifications/index.html">Certifications</a></li>
+        </ul> 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../Contact/index.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
 <main>
 
   <section class="py-5 text-center main container">
@@ -240,21 +273,21 @@
 
 </main>
 
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#"><i class="fa-solid fa-square-caret-up"></i> Top</a>
-    </p>
-    <p class="float-start mb-1">
-      <a href="../index.html"><i class="fa-solid fa-square-caret-left"></i> Back</a>
-    </p>
-    
+<!-- Footer -->
+<div id="footer">
+  <p class="text-muted mb-0">© 2022 MT Web Design</p>
+  <img id="logo" class="img-fluid width: 100% height: auto" src="../Images/Logo.png" alt="Business Logo">
+  <div class="fa">
+    <a href="https://www.linkedin.com/in/maiannethornton/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/MaianneThornton" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/MaianneThornton" target="_blank"><i class="fab fa-twitter"></i></a>
   </div>
-</footer>
-
 
     <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-      
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>
