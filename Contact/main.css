@@ -172,6 +172,8 @@ form button:hover {
   width: 80%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1502355984-b735cb2550ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80/');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,3 +250,65 @@ Footer
   border-color: white;
 }
 
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .thanks {
+    width: 80vw;
+    height: 100vh;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 50rem;
+  }
+
+  .thanks h1 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  .thanks h4 {
+    text-align: center;
+  }
+
+  .thanks p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .thanks {
+    width: 80vw;
+    height: 100vh;
+    color: #fff;
+    background-image: none;
+  }
+
+  .thanks h1 {
+    position: absolute;
+    top: 155px;
+   margin-bottom: 25px;
+   /* font-size: 1.3rem; */
+   text-align: center;
+  }
+
+  .thanks h4 {
+    margin-top: 125px;
+    text-align: center;
+  }
+
+  .thanks p{
+    text-align: center;
+  }
+  .socials i {
+    color: var(--clr-white);
+    font-size: 45px;
+  }
+}
