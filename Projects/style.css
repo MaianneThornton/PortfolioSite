@@ -11,7 +11,7 @@ Variables
   --clr-purple-light: hsl(302, 24%, 80%);
   --clr-white: #fff;
   --clr-black: #222;
-  --clr-grey-1: hsl(210, 36%, 96%);
+  --clr-grey-1: hsl(210, 6%, 81%);
   --clr-grey-2: hsl(209, 34%, 30%);
   --clr-primary-5: hsl(205, 78%, 60%);
   --clr-primary-7: hsl(205, 90%, 76%);
@@ -126,6 +126,7 @@ Section
 }
 
 .container {
+  margin-bottom: 1rem;
   border-radius: 1rem;
   box-shadow: var(--dark-shadow);
 }
